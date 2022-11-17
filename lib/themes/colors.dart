@@ -16,3 +16,5 @@ const secondaryColorDark = Color(0xFF07031b);
 
 const background = Color(0xFFB14A37);
 const textColor = Color(0xFFffffff);
+
+// TODO: Add app theme

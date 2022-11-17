@@ -26,6 +26,7 @@ class AppIntroWidget extends StatelessWidget {
                 "Accelerating Tech with confidence",
               ),
             ),
+            //TODO: add package to render svg images or add image with no background
             Image(
               image: AssetImage("assets/images/conference.png"),
             ),
