@@ -19,20 +19,14 @@ class LoginTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      obscureText: hasHiddenChars,
-      controller: controller,
-      style: TextStyle(color: BrandColor.textColor),
-      decoration: InputDecoration(
-        hintText: hintText,
-        hintStyle: TextStyle(color: BrandColor.textColor),
-        border: OutlineInputBorder(),
-      ),
-      validator: (value) {
-        if (value == null || value.isEmpty) {
-          return "Username is required";
-        }
-        return null;
-      },
-    );
+        obscureText: hasHiddenChars,
+        controller: controller,
+        style: TextStyle(color: BrandColor.textColor),
+        decoration: InputDecoration(
+          hintText: hintText,
+          hintStyle: TextStyle(color: BrandColor.secondaryColorLight),
+          border: OutlineInputBorder(),
+        ),
+        validator: validator);
   }
 }

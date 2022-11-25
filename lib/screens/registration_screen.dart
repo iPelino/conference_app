@@ -2,6 +2,7 @@ import 'package:conference_app/themes/colors.dart';
 import 'package:conference_app/widgets/app_title.dart';
 import 'package:email_validator/email_validator.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Registration extends StatefulWidget {
   const Registration({Key? key}) : super(key: key);
@@ -21,7 +22,7 @@ class _RegistrationState extends State<Registration> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: BrandColor.textColor,
+      backgroundColor: BrandColor.primaryColor,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 48),
         child: Column(
@@ -54,7 +55,7 @@ class _RegistrationState extends State<Registration> {
 
 // refactored form into registration form widget
 class RegistrationFormWidget extends StatelessWidget {
-  const RegistrationFormWidget({
+  RegistrationFormWidget({
     Key? key,
     required GlobalKey<FormState> myKey,
     required this.firstNameController,
@@ -72,6 +73,8 @@ class RegistrationFormWidget extends StatelessWidget {
   final TextEditingController passwordController;
   final TextEditingController cPasswordController;
 
+  final Uri termsConditions = Uri(scheme: 'https', host: 'www.google.com');
+
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -83,7 +86,7 @@ class RegistrationFormWidget extends StatelessWidget {
             TextFormField(
               controller: firstNameController,
               decoration: InputDecoration(
-                icon: Icon(
+                prefixIcon: Icon(
                   Icons.person,
                   color: BrandColor.textColor,
                 ),
@@ -215,6 +218,17 @@ class RegistrationFormWidget extends StatelessWidget {
                 if (_key.currentState!.validate()) {}
               },
               child: Text('Register'),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            InkWell(
+              child: Text(
+                'Terms and Conditions',
+                style: TextStyle(color: BrandColor.secondaryColor),
+              ),
+              onTap: () =>
+                  launchUrl(termsConditions, mode: LaunchMode.inAppWebView),
             ),
           ],
         ),
