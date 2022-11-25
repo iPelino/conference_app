@@ -19,7 +19,11 @@ class Speaker {
   String lastName;
   String? imageUrl;
 
-  Speaker({required this.firstName, required this.lastName, this.imageUrl});
+  Speaker({
+    required this.firstName,
+    required this.lastName,
+    this.imageUrl,
+  });
 }
 
 class Schedule {
@@ -30,11 +34,12 @@ class Schedule {
   String? room;
   Conference conference;
 
-  Schedule(
-      {required this.topic,
-      required this.speaker,
-      required this.start,
-      required this.end,
-      this.room,
-      required this.conference});
+  Schedule({
+    required this.topic,
+    required this.speaker,
+    required this.start,
+    required this.end,
+    this.room,
+    required this.conference,
+  });
 }
