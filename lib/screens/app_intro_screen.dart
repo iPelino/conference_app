@@ -10,16 +10,16 @@ class AppIntroWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: primaryColor,
+      backgroundColor: BrandColor.primaryColor,
       body: Padding(
         padding: const EdgeInsets.only(top: 40.0),
         child: ListView(
-          children: const [
+          children: [
             TitleWidget(),
             Center(
               child: Text(
                 style: TextStyle(
-                  color: textColor,
+                  color: BrandColor.textColor,
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
                 ),

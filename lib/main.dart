@@ -1,4 +1,5 @@
-import 'package:conference_app/screens/registration_screen.dart';
+import 'package:conference_app/screens/home_screen.dart';
+import 'package:conference_app/screens/login_screen.dart';
 import 'package:conference_app/themes/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -17,11 +18,12 @@ class ConferenceApp extends StatelessWidget {
       theme: ThemeData(
         // brightness
         brightness: Brightness.light,
-        primaryColor: primaryColor,
-        backgroundColor: primaryColor,
+        primaryColor: BrandColor.primaryColor,
+        backgroundColor: BrandColor.primaryColor,
         fontFamily: 'Poppins',
       ),
-      home: Registration(),
+      home: Login(),
+      routes: {'home': (context) => Home()},
     );
   }
 }

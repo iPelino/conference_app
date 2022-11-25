@@ -20,9 +20,9 @@ class _CounterState extends State<Counter> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: primaryColor,
+      backgroundColor: BrandColor.primaryColor,
       floatingActionButton: FloatingActionButton(
-        backgroundColor: secondaryColor,
+        backgroundColor: BrandColor.secondaryColor,
         child: Icon(Icons.add),
         onPressed: () {
           incrementCounter();
@@ -33,7 +33,7 @@ class _CounterState extends State<Counter> {
           "$counter",
           style: TextStyle(
             fontSize: 40,
-            color: textColor,
+            color: BrandColor.textColor,
           ),
         ),
       ),

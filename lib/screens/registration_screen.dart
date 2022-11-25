@@ -21,7 +21,7 @@ class _RegistrationState extends State<Registration> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: primaryColor,
+      backgroundColor: BrandColor.textColor,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 48),
         child: Column(
@@ -85,11 +85,11 @@ class RegistrationFormWidget extends StatelessWidget {
               decoration: InputDecoration(
                 icon: Icon(
                   Icons.person,
-                  color: textColor,
+                  color: BrandColor.textColor,
                 ),
                 border: OutlineInputBorder(),
                 hintText: "First Name",
-                hintStyle: TextStyle(color: textColor),
+                hintStyle: TextStyle(color: BrandColor.textColor),
               ),
               validator: (value) {
                 if (value == null || value.isEmpty) {
@@ -106,11 +106,11 @@ class RegistrationFormWidget extends StatelessWidget {
               decoration: InputDecoration(
                 prefixIcon: Icon(
                   Icons.person,
-                  color: textColor,
+                  color: BrandColor.textColor,
                 ),
                 border: OutlineInputBorder(),
                 hintText: "Last Name",
-                hintStyle: TextStyle(color: textColor),
+                hintStyle: TextStyle(color: BrandColor.textColor),
               ),
               validator: (value) {
                 if (value == null || value.isEmpty) {
@@ -127,11 +127,11 @@ class RegistrationFormWidget extends StatelessWidget {
               decoration: InputDecoration(
                 prefixIcon: Icon(
                   Icons.mail,
-                  color: textColor,
+                  color: BrandColor.textColor,
                 ),
                 border: OutlineInputBorder(),
                 hintText: "Email",
-                hintStyle: TextStyle(color: textColor),
+                hintStyle: TextStyle(color: BrandColor.textColor),
               ),
               keyboardType: TextInputType.emailAddress,
               autofillHints: [AutofillHints.email],
@@ -155,11 +155,11 @@ class RegistrationFormWidget extends StatelessWidget {
               decoration: InputDecoration(
                 prefixIcon: Icon(
                   Icons.lock,
-                  color: textColor,
+                  color: BrandColor.textColor,
                 ),
                 border: OutlineInputBorder(),
                 hintText: "Password",
-                hintStyle: TextStyle(color: textColor),
+                hintStyle: TextStyle(color: BrandColor.textColor),
               ),
               validator: (value) {
                 if (value == null || value.isEmpty) {
@@ -182,11 +182,11 @@ class RegistrationFormWidget extends StatelessWidget {
               decoration: InputDecoration(
                 prefixIcon: Icon(
                   Icons.lock,
-                  color: textColor,
+                  color: BrandColor.textColor,
                 ),
                 border: OutlineInputBorder(),
                 hintText: "Confirm Password",
-                hintStyle: TextStyle(color: textColor),
+                hintStyle: TextStyle(color: BrandColor.textColor),
               ),
               validator: (value) {
                 if (value == null || value.isEmpty) {
@@ -206,7 +206,7 @@ class RegistrationFormWidget extends StatelessWidget {
             ElevatedButton(
               style: ButtonStyle(
                 backgroundColor:
-                    MaterialStatePropertyAll<Color>(secondaryColor),
+                    MaterialStatePropertyAll<Color>(BrandColor.secondaryColor),
               ),
               // style: ElevatedButton.styleFrom(
               //     foregroundColor: Theme.of(context).highlightColor,
