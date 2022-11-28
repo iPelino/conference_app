@@ -14,3 +14,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+# la lossa group this is a name of our team on figma
+# step 1 marking a launch screen: https://www.figma.com/file/qDdbvxn16tmkrW1bHKUQi3/Untitled?node-id=2%3A3&t=uuai8TuBrJbGw1II-0
