@@ -13,6 +13,7 @@ class SpeakerAll extends StatefulWidget {
 }
 
 class _SpeakerAllState extends State<SpeakerAll> {
+  // Fetch data from the network
   Future<List<Speaker>> _getNetworkSpeakers() async {
     var endpointUrl = Uri.parse(
         'https://63848d3a4ce192ac605b092f.mockapi.io/api/v1/speakers');
