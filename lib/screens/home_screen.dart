@@ -4,7 +4,7 @@ import 'package:conference_app/themes/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../models/entities.dart';
+import '../models/conference.dart';
 import '../widgets/conference_card.dart';
 
 class Home extends StatefulWidget {

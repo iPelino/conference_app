@@ -30,11 +30,10 @@ class _LoginState extends State<Login> {
       // );
 
       // option 2: named routes
-      // Navigator.pushNamed(
-      //   context,
-      //   'home',
-      //   arguments: '${usernameController.text}',
-      // );
+      Navigator.pushNamed(
+        context,
+        'home',
+      );
 
       // Option 3: pushReplacement
       Navigator.pushReplacementNamed(

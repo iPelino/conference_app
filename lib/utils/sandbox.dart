@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:core';
 
-import 'package:conference_app/models/entities.dart';
+import 'package:conference_app/models/conference.dart';
 import 'package:flutter/services.dart';
 
 class Utils {

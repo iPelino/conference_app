@@ -28,7 +28,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   route() {
-    Navigator.pushReplacementNamed(context, 'login');
+    Navigator.pushReplacementNamed(context, 'speakers');
   }
 
   Widget build(BuildContext context) {
